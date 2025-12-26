@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mojtaba Janbaz | Professional Portfolio</title>
+    <style>
+        :root {
+            --primary-bg: #f8f9fa;
+            --section-bg: #ffffff;
+            --text-main: #2d3436;
+            --text-secondary: #636e72;
+            --accent: #0984e3;
+            --border: #dfe6e9;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: var(--primary-bg); color: var(--text-main); line-height: 1.6; }
+       .container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+        header { background: var(--section-bg); padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; margin-bottom: 30px; }
+       .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid var(--accent); margin-bottom: 20px; }
+        h1 { font-size: 2.5rem; color: var(--text-main); margin-bottom: 10px; }
+       .contact-bar { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin-top: 20px; }
+       .contact-bar a { color: var(--accent); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        section { background: var(--section-bg); padding: 35px; border-radius: 12px; margin-bottom: 25px; box-shadow: 0 2px 4px rgba(0,0,0,0.03); }
+        h2 { font-size: 1.5rem; color: var(--accent); margin-bottom: 25px; border-bottom: 2px solid var(--primary-bg); padding-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        h3 { font-size: 1.2rem; color: var(--text-main); margin-bottom: 5px; }
+       .sub-text { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 15px; display: block; }
+       .content-block { margin-bottom: 30px; }
+       .list-style { list-style: none; }
+       .list-style li { position: relative; padding-left: 20px; margin-bottom: 8px; color: var(--text-secondary); }
+       .list-style li::before { content: "•"; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+       .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+       .skill-category h4 { font-size: 1rem; margin-bottom: 10px; color: var(--text-main); }
+       .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+       .tag { background: var(--primary-bg); padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; color: var(--text-secondary); border: 1px solid var(--border); }
+       .date-location { display: flex; justify-content: space-between; font-size: 0.9rem; color: var(--accent); font-weight: 600; margin-bottom: 10px; }
+       .reference-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        footer { text-align: center; padding: 40px; color: var(--text-secondary); font-size: 0.85rem; }
+        @media (max-width: 600px) {.reference-grid { grid-template-columns: 1fr; }.date-location { flex-direction: column; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="profile.jpg" alt="Mojtaba Janbaz" class="profile-img">
+        <h1>Mojtaba Janbaz</h1>
+        <p>Computer Engineer | NLP & Deep Learning Researcher</p>
+        <div class="contact-bar">
+            <span>Qaem Shahr, Mazandaran, Iran</span>
+            <a href="tel:+989302531016">(+98) 9302531016</a>
+            <a href="mailto:mojtabajanbaz1380@gmail.com">mojtabajanbaz1380@gmail.com</a>
+            <a href="https://linkedin.com/in/mojtabajanbaz">LinkedIn</a>
+            <a href="https://github.com/mojtabajz">GitHub</a>
+        </div>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="content-block">
+            <div class="date-location">
+                <span>IUST University (Top 4 in Iran)</span>
+                <span>Tehran, Iran | 2020-2025</span>
+            </div>
+            <h3>B.Sc. in Computer Engineering</h3>
+            <span class="sub-text">Overall GPA: 3.21/4.0 | Last Two Years GPA: 3.66/4.0</span>
+            <p><strong>Bachelor Thesis:</strong> A System for Psychological Stress Assessment Based on Text</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location">
+                <span>Nezamodin High School</span>
+                <span>Qaem Shahr | 2017-2020</span>
+            </div>
+            <h3>Diploma in Mathematics and Physics</h3>
+            <span class="sub-text">Grade: A (17.5/20.0)</span>
+        </div>
+    </section>
+
+    <section id="interests">
+        <h2>Research Interests</h2>
+        <div class="tags">
+            <span class="tag">Natural Language Processing</span>
+            <span class="tag">Sentiment Analysis</span>
+            <span class="tag">Machine / Deep Learning</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Social Psychological Analysis</span>
+            <span class="tag">Social Analysis</span>
+        </div>
+    </section>
+
+    <section id="research-experience">
+        <h2>Research Experience</h2>
+        <div class="content-block">
+            <div class="date-location">
+                <span>Bachelor Thesis | Supervisor: Dr. Jahed-Motlagh</span>
+                <span>Oct 2025</span>
+            </div>
+            <h3>A System for Psychological Stress Assessment Based on Text</h3>
+            <ul class="list-style">
+                <li>Innovated in data quality improvement by re-labeling a large dataset of Persian tweets using the Gemini 2.5 Flash model with a sophisticated, engineered prompt.</li>
+                <li>Created a high-quality, refined dataset of 4.2 million samples by filtering for instances where the original label and the new LLM-generated label were in agreement.</li>
+                <li>Fine tuned and trained a diverse set of models on this refined data, including classic (Logistic Regression, SVM), word representation (FastText), and Transformer-based (a Persian BERT) models.</li>
+                <li>Implemented an Ensemble Learning model using a weighted-voting strategy to combine the predictions from all four models for the final assessment.</li>
+                <li>Built a complete, end-to-end web application featuring a Flask backend (to serve the ensemble model via an API) and an HTML/CSS/JavaScript frontend.</li>
+                <li>The final application provides users with a stress analysis, including Chart.js visualizations for both "sectional" (local, 3-word chunks) and "cumulative" (progressive, overall) stress levels in the text.</li>
+                <li>Conducted a detailed results analysis, proving that data refinement dramatically improved model performance and analyzed the trade-off between data quality and volume/diversity.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="selected-projects">
+        <h2>Selected Projects</h2>
+        <div class="content-block">
+            <div class="date-location"><span>ResNet (Computer Vision Course)</span><span>Fall 2023</span></div>
+            <p>Explored deep learning models on the Fashion-MNIST and CIFAR-10 datasets, implementing ResNet18, ResNet32, and a CNN to highlight the importance of model architecture selection.</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>OPEX Game Shop (Software Engineering)</span><span>Fall 2023</span></div>
+            <p>Application implemented with Scrum Methodology, Automatic testing, and deployment. Frontend developed with React JS and Backend with.Net.</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>Multilayer Perceptron (AI Course)</span><span>Spring 2023</span></div>
+            <p>Learning conducted with different parameters to improve the analysis of images and functions using neural network preparations.</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>Genetic Programming (AI Course)</span><span>Spring 2023</span></div>
+            <p>Utilizing genetic programming to approximate various mathematical functions.</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>Music Application (System Analysis & Design)</span><span>Fall 2022</span></div>
+            <ul class="list-style">
+                <li>Great platform for searching and listening to music.</li>
+                <li>Analyzing user data based on the music they listen to.</li>
+                <li>Creating interactive components for a responsive UI using React JS and collaborating with a Django Backend team.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Teaching & Industrial Experience</h2>
+        <div class="content-block">
+            <h3>Teaching Assistant - School of Computer Engineering</h3>
+            <ul class="list-style">
+                <li>Computer Network Security - Instructor: Dr. Abolfazl Diyanat (Fall 2024)</li>
+                <li>Operating Systems Lab - Instructor: Dr. Reza Entezari-Maleki (Fall 2024)</li>
+                <li>Algorithm analysis and design - Instructor: Dr. Farzaneh Ghayour Baghbani (Fall 2024)</li>
+                <li>Operating Systems Lab (Head TA) - Instructor: Dr. Reza Entezari-Maleki (Spring 2024)</li>
+                <li>Fundamentals of Computer Programming - Instructor: Dr. Mehrdad Ashtiani (Spring 2024)</li>
+                <li>Microprocessors - Instructor: Mr. Hashem Mashhoun (Fall 2023)</li>
+                <li>Logic Circuit - Instructor: Dr. Meysam Abdollahi (Spring 2022)</li>
+            </ul>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>Backend Developer (Abalon)</span><span>Jun - Sep 2023</span></div>
+            <p>Programming Languages: Python | Libraries and Frameworks: Django, SQL Server, unittest.</p>
+        </div>
+        <div class="content-block">
+            <div class="date-location"><span>Expert QA and Analyst (System Group)</span><span>Sep 2025 - Present</span></div>
+            <ul class="list-style">
+                <li>Product analysis of system functionality in Front-end Core team.</li>
+                <li>Manual testing and automation of end-to-end test creation through analysis documents using hybrid AI assistants.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Go</span><span class="tag">C++</span><span class="tag">JS</span>
+                    <span class="tag">Java</span><span class="tag">SQL</span><span class="tag">C</span><span class="tag">C#</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Libraries & Frameworks</h4>
+                <div class="tags">
+                    <span class="tag">Pytorch</span><span class="tag">torchvision</span><span class="tag">React JS</span>
+                    <span class="tag">sklearn</span><span class="tag">Matplotlib</span><span class="tag">Pandas</span>
+                    <span class="tag">Numpy</span><span class="tag">MUI</span><span class="tag">ANTLR</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h4>Tools</h4>
+                <div class="tags">
+                    <span class="tag">Linux(Ubuntu)</span><span class="tag">Git</span><span class="tag">Jupyter</span>
+                    <span class="tag">Postman</span><span class="tag">Google Colab</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <h2>Certificates & Contributions</h2>
+        <ul class="list-style">
+            <li><strong>Neural Networks and Deep Learning:</strong> Certificate on Coursera.org (Sep 2025)</li>
+            <li><strong>ML Challenge (IUST):</strong> Third Place in Approximation Function Competition (May 2023)</li>
+            <li><strong>CESA Honorary Member:</strong> Organizing Entrance Party and Harekat Festival.</li>
+        </ul>
+    </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <p><strong>Persian:</strong> Native | <strong>English:</strong> IELTS Academic 7.0 (L:6.5, R:7, W:6.5, S:7)</p>
+    </section>
+
+    <section id="references">
+        <h2>References</h2>
+        <div class="reference-grid">
+            <div>
+                <h3>Dr. Mohammad Reza Jahed-Motlagh</h3>
+                <p class="sub-text">Professor at Department of Computer Engineering, IUST</p>
+                <p>Email: jahedmr@iust.ac.ir</p>
+            </div>
+            <div>
+                <h3>Dr. Mehrdad Ashtiani</h3>
+                <p class="sub-text">Assistant Professor at Department of Computer Engineering, IUST</p>
+                <p>Email: m_ashtiani@iust.ac.ir</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mojtaba Janbaz. Last Updated: December 15, 2025.</p>
+    </footer>
+</div>
+
+</body>
+</html>
